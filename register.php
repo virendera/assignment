@@ -31,7 +31,7 @@
         			                  <div class="author" >
         			                    <a href="javascript:void(0)">
         			                      <img id="fileDisplayArea" style="height: 150px; width: 150px;"class="avatar" src="img/user.png" alt="...">
-        			                      <h5 class="title"><input type="file" style="font-size: small;" name="image" id="fileInput"></h5>
+        			                      <h5 class="title"><input type="file" required style="font-size: small;" name="image" id="fileInput"></h5>
         			                    </a>
         			                  </div>
         			              </div>
@@ -48,22 +48,22 @@
                     <div class="col-md-4 pr-md-2">
                       <div class="form-group">
                         <label for="exampleInputEmail1">Email</label>
-                        <input type="email" name="email" class="form-control" placeholder="mike@email.com" >
+                        <input type="email" name="email" class="form-control" required placeholder="mike@email.com" >
                       </div>
                       <div class="form-group">
                         <label>Address</label>
-                        <input type="text" name="address" class="form-control" placeholder="Home Address" value="">
+                        <input type="text" name="address"  class="form-control"  required placeholder="Home Address" value="">
                       </div>  
                       <div class="form-group">
                         <label>Gender</label>
-          							<select name="gender" class="form-control" >
+          							<select name="gender" required class="form-control" >
           								<option value="Male" label="Male" > Male </option >
           								<option value="Female" label="Female"> Female </option >
           							</select >     
                       </div>   
                       <div class="form-group">
                         <label for="exampleInputPassword">Password</label>
-                        <input type="password" name="password" class="form-control" placeholder="" >
+                        <input type="password" name="password" required class="form-control" placeholder="" >
                       </div>
                       <div class="col-12">
                     <div class=" form-group custom-control custom-control-alternative custom-checkbox">
@@ -77,22 +77,22 @@
                      <div class="col-md-4 pr-md-1">
                       <div class="form-group">
                         <label>Name</label>
-                        <input type="text" name="name" class="form-control" placeholder="Name" >
+                        <input type="text" name="name" required class="form-control" placeholder="Name" >
                       </div>
                       <div class="form-group">
                         <label>Contact</label>
-                        <input type="number" name="contact" class="form-control" placeholder="1234567890" >
+                        <input type="number" name="contact" required class="form-control" placeholder="1234567890" >
                       </div>
                       <div class="form-group">
                         <label>User Type</label>
-          							<select name="usertype" class="form-control" >
+          							<select name="usertype" required class="form-control" >
           								<option value="teacher" label="Teacher" > Teacher </option >
           								<option value="student" label="Student"> Student </option >
           							</select >                         	
                       </div>
                       <div class="form-group">
                         <label for="exampleInputPassword">Retype Password</label>
-                        <input type="password" name="repassword" class="form-control" placeholder="" >
+                        <input type="password" name="repassword" required class="form-control" placeholder="" >
                       </div>
                     </div>                   
                   </div>            

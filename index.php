@@ -44,11 +44,11 @@ if(isset($_POST['login']) and $_POST['login']=='login')
                      <div class="col-md-12">
                       <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" name="login_email" value="<?php echo htmlspecialchars(trim(isset($_POST['login_email'])?$_POST['login_email']:''));?>"  placeholder="mike@email.com" >
+                        <input type="email" class="form-control" required name="login_email" value="<?php echo htmlspecialchars(trim(isset($_POST['login_email'])?$_POST['login_email']:''));?>"  placeholder="mike@email.com" >
                       </div>
                       <div class="form-group">
                         <label for="exampleInputPassword">Password</label>
-                        <input type="password" class="form-control" name="login_password" placeholder="" >
+                        <input type="password" class="form-control" required name="login_password" placeholder="" >
                       </div>
                     </div>                 	              
                   </div>            

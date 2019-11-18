@@ -42,6 +42,25 @@ else
 {
 	echo "<p class='btn-danger'>Error in Post table creation</p>";
 }
+
+
+$sql =sprintf("CREATE EVENT Delete_login
+				ON SCHEDULE EVERY 7 DAY -- interval
+				COMMENT 'Event deletes login records after 7 days.'
+				DO
+				BEGIN
+				DELETE FROM login WHERE DATEDIFF(NOW(), date_created) >= 7;
+				END");
+if($mysqli->query($sql)===TRUE)
+{
+	echo "<p class='btn-success'>After 7 days register user deleted event created successfully:)</p>";
+
+}
+else
+{
+	echo "<p class='btn-danger'>Error in delete event creation</p>";
+}
+
 $sql =sprintf("INSERT INTO `demo`.`login` (`id`,`email`,`password`,`name`,`contact`,`address`,`image`,`gender`,`user_type`,`status`,`date_created`) VALUES (NULL,'%s','%s','%s','%s','%s','%s','%s','%s','%s','%s')",'admin@gmail.com','admin','admin','99999999','Delhi','user.png','M','1','1',date('Y-m-d'));
 if($mysqli->query($sql)===TRUE)
 {
